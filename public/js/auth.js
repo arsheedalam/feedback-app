@@ -3,7 +3,7 @@ async function login() {
 const username = document.getElementById("username").value;
 const password = document.getElementById("password").value;
 
-const res = await fetch("http://localhost:5000/api/auth/login", {
+const res = await fetch("http://localhost:8080/api/auth/login", {
 
 method: "POST",
 
@@ -26,7 +26,7 @@ if(data.token){
 
 localStorage.setItem("token", data.token)
 
-window.location.href = "/pages/feedback.html"
+window.location.href = "/Feedback-app/public/pages/feedback.html"
 
 }else{
 
@@ -42,7 +42,7 @@ async function register(){
 const username = document.getElementById("username").value;
 const password = document.getElementById("password").value;
 
-const res = await fetch("http://localhost:5000/api/auth/register", {
+const res = await fetch("http://localhost:8080/api/auth/register", {
 
 method: "POST",
 
@@ -59,6 +59,6 @@ password
 
 const data = await res.json()
 
-window.location.href = "login.html"
+window.location.href = "/Feedback-app/public/pages/login.html"
 
 }
