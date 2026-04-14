@@ -45,7 +45,7 @@ async function editFeedback(id, oldMessage) {
 
     if (!newMessage) return;
 
-    await fetch(`/api/feedback/${id}`, {
+    await fetch(`http://localhost:8080/api/feedback/${id}`, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -63,7 +63,7 @@ async function deleteFeedback(id) {
 
     if (!confirmDelete) return;
 
-    await fetch(`/api/feedback/${id}`, {
+    await fetch(`http://localhost:8080/api/feedback${id}`, {
         method: "DELETE",
         headers: {
             Authorization: "Bearer " + token
