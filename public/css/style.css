@@ -1,0 +1,124 @@
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+.auth-container {
+  text-align: center;
+  background: #e2e2e2 !important;
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+body {
+  font-family: Arial;
+  background: #f5f5f5;
+}
+
+/* Feedback Box */
+.feedback-container {
+  text-align: center;
+  width: 350px;
+  margin: 100px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+}
+
+/* Buttons row */
+.btn-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+button {
+  flex: 1;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: 1px solid #000;
+  background: white;
+}
+
+/* Disabled Edit Button Style */
+#editBtn {
+  background: #ddd;
+  border: none;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+/* Submit Button */
+.submit-btn {
+  width: 100%;
+  background: #ddd;
+  border: none;
+}
+
+/* -----------------------Admin Dashboard----------------- */
+
+.admin-container {
+  width: 700px;
+  margin: 80px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,.1);
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background: #eee;
+}
+
+.actions button {
+  margin-right: 5px;
+  padding: 5px 8px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.view-btn { background: #ddd; }
+.edit-btn { background: #ccc; }
+.delete-btn { background: #bbb; }
