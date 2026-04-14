@@ -15,7 +15,7 @@ async function submitFeedback() {
             return;
         }
 
-        const res = await fetch("/api/feedback", {
+        const res = await fetch("http://localhost:8080/api/feedback", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -44,7 +44,7 @@ async function submitFeedback() {
 /* Load Feedback */
 async function loadFeedback() {
     try {
-        const res = await fetch("/api/feedback", {
+        const res = await fetch("http://localhost:8080/api/feedback", {
             headers: {
                 Authorization: "Bearer " + token
             }
