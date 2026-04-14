@@ -110,7 +110,9 @@ th, td {
 th {
   background: #eee;
 }
-
+td.actions{
+  display: flex;
+}
 .actions button {
   margin-right: 5px;
   padding: 5px 8px;
